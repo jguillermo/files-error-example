@@ -7,7 +7,7 @@ jobs:
     name: Check Files
     steps:
       - name: Pull request file revision
-        uses: jguillermo/files-error@v1.0.4
+        uses: jguillermo/files-error@v1.0.5
         with:
           path: 'frameowrks/features'
           patterns: '#'
