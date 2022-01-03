@@ -1,0 +1,13 @@
+name: CI
+on: [pull_request]
+
+jobs:
+  revisionFiles:
+    runs-on: ubuntu-latest
+    name: Check Files
+    steps:
+      - name: Pull request file revision
+        uses: jguillermo/files-error@v1.0.0
+        with:
+          path: 'frameowrks/features'
+          patterns: '#'
