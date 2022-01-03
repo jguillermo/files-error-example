@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Check Files
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Pull request file revision
         uses: jguillermo/files-error@v1.0.6
         with:
