@@ -6,7 +6,7 @@ Feature: Heartcheck
   Scenario: Get heartbeep
     Given I make a GET request to "healthcheck"
     Then I get a SUCCESSFUL response
-    And I validate is HTML response
+    #And I validate is HTML response
     And I validate the response is
     """
     we are here ;)
